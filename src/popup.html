@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Keep Alive</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+    </style>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="popup.js"></script>
+  </head>
+  <body>
+	<input id='url' type='text' class="form-control" placeholder="URL" />
+	<div class="input-group">
+		<input id='guid' type='text' class="form-control" placeholder="GUID" />
+		<span class="input-group-btn">
+		  <button class="btn btn-default" type="button" id='button'>OK</button>
+		</span>
+	</div>
+	<div style='text-align: center;' id='output'>
+	</div>
+	<hr />
+	<b>Open Sessions</b> <a href='#' id='clearsessions'>Clear Sessions</a>
+	<ul id='sessions'>
+
+	</ul>
+  </body>
+</html>
+

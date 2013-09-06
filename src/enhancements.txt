@@ -1,0 +1,1 @@
+* Add a 'note' textbox to the popup to label sessions (e.g. 'ISR on DEV'; 'Broker')
